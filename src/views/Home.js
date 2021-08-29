@@ -88,7 +88,6 @@ const useStyles = makeStyles((theme) => ({
     width: "90vw",
     maxWidth: "520px",
     maxHeight: "70vh",
-    overflowY: "scroll",
     zIndex: 99999,
     marginTop: "60px",
     borderRadius: "16px",
@@ -343,7 +342,7 @@ const Home = () => {
       <div className={globalCls.bodyRoot}>
         <div className="f1 w-100 h-100">
           <Hidden smDown implementation="css">
-            <div className={cls.leftPane}>
+            <div className={clsx(cls.leftPane, "sb_hid")}>
               <FileSideDrawer handleAddFileFolder={handleAddFileFolder} />
             </div>
           </Hidden>

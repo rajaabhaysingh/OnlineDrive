@@ -52,13 +52,15 @@ const FileSideDrawer = ({ handleAddFileFolder, onClick }) => {
         label: node.fileName,
         value: node.id,
         className: cls.txt,
+        showCheckbox: false,
         icon:
           node.type === "file" ? (
             <i className="far fa-file"></i>
           ) : (
             <i className="fas fa-folder-open"></i>
           ),
-        children: node.children?.length > 0 ? generateNode(node.children) : [],
+        children:
+          node.children?.length > 0 ? generateNode(node.children) : null,
       });
     }
 
@@ -88,7 +90,6 @@ const FileSideDrawer = ({ handleAddFileFolder, onClick }) => {
         </div>
         <CheckboxTree
           noCascade
-          onlyLeafCheckboxes
           nodes={generateNode()}
           checked={state.checked}
           expanded={state.expanded}

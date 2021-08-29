@@ -111,7 +111,6 @@ const useStyles = makeStyles((theme) => ({
     width: "90vw",
     maxWidth: "620px",
     maxHeight: "70vh",
-    overflowY: "scroll",
     zIndex: 99999,
     marginTop: "60px",
   },

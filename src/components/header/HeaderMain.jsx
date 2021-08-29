@@ -235,7 +235,7 @@ const HeaderMain = () => {
 
           <Hidden smDown implementation="css">
             <div className="mar_l-32 tagline">
-              A persistant local file system
+              A persistent local file system
             </div>
           </Hidden>
         </div>

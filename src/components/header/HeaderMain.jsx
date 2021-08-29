@@ -233,6 +233,12 @@ const HeaderMain = () => {
           <Link to="/" className="fc">
             <div className={cls.logo}></div>
           </Link>
+
+          <Hidden smDown implementation="css">
+            <div className="mar_l-32 tagline">
+              A persistant local file system
+            </div>
+          </Hidden>
         </div>
         <div className="fc">
           {/* for mobile */}

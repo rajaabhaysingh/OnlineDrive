@@ -67,34 +67,6 @@ const FileFolderView = ({
   const [filesList, setFilesList] = React.useState([]);
   const [foldersList, setFoldersList] = React.useState([]);
 
-  // React.useEffect(() => {
-  //   let tempFolderList = [],
-  //     tempFileList = [];
-
-  //   for (const child of node) {
-  //     if (
-  //       helper.searchText &&
-  //       child.fileName.toLowerCase().includes(helper.searchText.toLowerCase())
-  //     ) {
-  //       if (child.type === "folder") {
-  //         tempFolderList.push(child);
-  //       } else {
-  //         tempFileList.push(child);
-  //       }
-  //     } else {
-  //       if (child.type === "folder") {
-  //         tempFolderList.push(child);
-  //       } else {
-  //         tempFileList.push(child);
-  //       }
-  //     }
-  //   }
-
-  //   setFilesList(tempFileList);
-  //   setFoldersList(tempFolderList);
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
-
   React.useEffect(() => {
     let tempFolderList = [],
       tempFileList = [];
@@ -104,7 +76,6 @@ const FileFolderView = ({
         if (
           child.fileName.toLowerCase().includes(helper.searchText.toLowerCase())
         ) {
-          console.log("Includes");
           if (child.type === "folder") {
             tempFolderList.push(child);
           } else {

@@ -170,7 +170,7 @@ const SideDrawer = ({ isMenuOpen, setMenuOpen }) => {
           </div>
         </div>
 
-        <FileSideDrawer />
+        <FileSideDrawer onClick={() => setMenuOpen(false)} />
       </div>
       <div
         ref={backdropRef}

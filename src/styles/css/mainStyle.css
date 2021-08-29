@@ -190,6 +190,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.tagline {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 1.2rem;
+}
 /* ================================================================= */
 
 /* react context menu */

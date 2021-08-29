@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const FileSideDrawer = ({ handleAddFileFolder }) => {
+const FileSideDrawer = ({ handleAddFileFolder, onClick }) => {
   const globalCls = useGlobalStyles();
   const cls = useStyles();
 
@@ -68,7 +68,10 @@ const FileSideDrawer = ({ handleAddFileFolder }) => {
   return (
     <div className={clsx(cls.root, "fcol")}>
       <Button
-        onClick={handleAddFileFolder}
+        onClick={() => {
+          handleAddFileFolder();
+          onClick();
+        }}
         className={clsx("w-100", cls.btn)}
         variant={"contained"}
         color="primary"

@@ -11,7 +11,7 @@ const initialState = {
       id: nanoid(),
       children: [
         {
-          fileName: "OfferLetter.pdf",
+          fileName: "Letter.pdf",
           type: "file",
           fileExtension: "pdf",
           id: nanoid(),
